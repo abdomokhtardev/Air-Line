@@ -4,25 +4,32 @@ const Services = () => {
     const { t } = useLanguage();
 
     return (
-        <div className="py-20 bg-slate-900">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-16">
+        <div className="py-24 bg-dark relative">
+            {/* Soft glow in the background */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-1/2 bg-primary/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16 tracking-wide drop-shadow-md">
                     {t.services.title}
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {t.services.items.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-slate-800 p-8 rounded-2xl hover:bg-slate-700 transition-all duration-300 transform hover:-translate-y-2 border border-white/5 hover:border-amber-500/30 group"
+                            className="bg-secondary/40 backdrop-blur-md p-10 rounded-3xl hover:bg-secondary/60 transition-all duration-500 transform hover:-translate-y-3 border border-white/5 hover:border-primary/50 group shadow-xl hover:shadow-[0_20px_40px_rgba(212,175,55,0.1)] relative overflow-hidden"
                         >
-                            <div className="w-12 h-12 bg-amber-500/10 rounded-full flex items-center justify-center mb-6 text-amber-500 group-hover:bg-amber-500 group-hover:text-slate-900 transition-colors">
-                                <span className="text-xl font-bold">{index + 1}</span>
+                            {/* Decorative accent line */}
+                            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-secondary transition-all duration-500">
+                                {/* Elegant SVG Icon based on index for variety, or just keep numbers but stylize them */}
+                                <span className="text-2xl font-bold font-serif italic">{index + 1}</span>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-4">
+                            <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors duration-300">
                                 {item.title}
                             </h3>
-                            <p className="text-gray-400">
+                            <p className="text-gray-300 leading-relaxed font-light">
                                 {item.desc}
                             </p>
                         </div>

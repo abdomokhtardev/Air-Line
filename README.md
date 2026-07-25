@@ -1,50 +1,33 @@
-# Luxury Airline Landing Page
+# Egyptair Landing Page Clone
 
-A premium landing page for "Royal Sky Airlines" built with React, Vite, and Tailwind CSS.
-Supports Arabic and English languages with RTL/LTR layout.
+This project is a high-fidelity, ultra-premium clone of an airline landing page, tailored with Egyptair branding. Built with React and Tailwind CSS, it features modern glassmorphism UI, smooth animations, and bilingual support.
 
 ## Features
 
-- **Dark & Luxury Design**: Slate 900 background with Amber/Gold accents.
-- **Bilingual Support**: Fully translated content (AR/EN) with automatic direction adjustment (RTL/LTR).
-- **Responsive**: Mobile-first design using Tailwind CSS.
-- **Components**: Navbar, Hero, Services, Footer.
+- **Ultra-Premium UI**: Designed to match the quality of top global airlines. Features a dark theme (`#0a1128`) with signature Egyptair Navy and Gold accents.
+- **Bilingual Support (Arabic & English)**: Fully localized using a custom `LanguageContext`. Supports dynamic RTL (Right-to-Left) and LTR layout switching.
+- **Dynamic Fonts**: Uses Google Fonts `Tajawal` for Arabic and `Outfit` for English to ensure optimal typography.
+- **Flight Booking Engine**: A complex, glassmorphism-styled booking widget for searching flights.
+- **Global Network Map**: An interactive-looking world map with animated SVG flight routes radiating from Cairo.
+- **Smooth Navigation**: The Navbar features a scroll effect and anchor links that smoothly scroll to sections on the page.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+
+## Tech Stack
+
+- React (Vite)
+- Tailwind CSS
+- CSS Animations & SVG Manipulation
 
 ## Getting Started
 
-### Prerequisites
-- Node.js (v18+ recommended)
-- npm
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm run dev` to start the development server
+4. Open the provided localhost link in your browser
 
-### Installation
+## Project Structure
 
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-### Building for Production
-
-To create a production-ready build:
-
-```bash
-npm run build
-```
-
-The output will be in the `dist` folder.
-
-## Deployment
-
-### Netlify / Vercel
-1. Connect your repository.
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-
-### Apache / Nginx
-Upload the contents of the `dist` folder to your server's public directory.
-Ensure your server is configured to handle Single Page Applications (rewrite all requests to index.html).
+- `/src/components`: Contains all UI blocks (`Navbar`, `Hero`, `BookingWidget`, `DestinationsMap`, `Manage`, `Services`, `Help`, `Footer`).
+- `/src/context`: Contains the `LanguageContext.jsx` for localization state.
+- `/src/index.css`: Contains custom CSS animations (`float`, `draw-route`, etc.) and global styles.
+- `tailwind.config.js`: Contains the custom color palette and font definitions.

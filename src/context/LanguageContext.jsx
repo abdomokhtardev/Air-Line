@@ -4,57 +4,123 @@ const LanguageContext = createContext();
 
 const translations = {
     en: {
-        brand: "Royal Sky Airlines",
+        brand: "EGYPTAIR",
         nav: {
             home: "Home",
-            about: "About",
-            services: "Services",
-            contact: "Contact"
+            book: "Book",
+            manage: "Manage",
+            experience: "Experience",
+            help: "Help"
         },
         hero: {
             title: "Experience Luxury Above the Clouds",
-            subtitle: "Royal Sky Airlines offers an unparalleled travel experience with world-class comfort and service.",
+            subtitle: "Fly with Egyptair and discover an unparalleled travel experience with world-class comfort and service.",
             cta: "Book Your Flight"
+        },
+        booking: {
+            flightSearch: "Flight Search",
+            from: "From",
+            to: "To",
+            depart: "Depart",
+            return: "Return",
+            passengers: "Passengers",
+            search: "Search Flights",
+            oneWay: "One Way",
+            roundTrip: "Round Trip"
+        },
+        map: {
+            title: "Our Global Network",
+            subtitle: "Connecting you to over 150 destinations worldwide from our hub in Cairo."
+        },
+        manage: {
+            title: "Manage Your Booking",
+            subtitle: "View, modify, or check-in to your upcoming flights.",
+            bookingRef: "Booking Reference",
+            lastName: "Last Name",
+            submit: "Retrieve Booking"
+        },
+        help: {
+            title: "How Can We Help You?",
+            subtitle: "Find answers to frequently asked questions.",
+            faq1Title: "Baggage Allowance",
+            faq1Desc: "Learn about checked and cabin baggage limits for your flight.",
+            faq2Title: "Check-in Online",
+            faq2Desc: "Check-in up to 48 hours before your flight departure.",
+            faq3Title: "Flight Status",
+            faq3Desc: "Get real-time updates on your flight departure and arrival times."
         },
         services: {
             title: "Our Premier Services",
             items: [
-                { title: "First Class Suites", desc: "Private suites with fully flat beds." },
-                { title: "Gourmet Dining", desc: "Exquisite meals prepared by top chefs." },
-                { title: "In-Flight Lounge", desc: "Relax and socialize in our exclusive lounge." }
+                { title: "First Class Suites", desc: "Private suites with fully flat beds for ultimate relaxation." },
+                { title: "Gourmet Dining", desc: "Exquisite meals prepared by top chefs from around the globe." },
+                { title: "In-Flight Lounge", desc: "Relax and socialize in our exclusive premium lounge." }
             ]
         },
         footer: {
             contact: "Contact Us",
-            address: "123 Aviation Way, Sky City",
-            rights: "© 2026 Royal Sky Airlines. All rights reserved."
+            address: "Cairo International Airport, Egypt",
+            rights: "© 2026 Egyptair. All rights reserved."
         }
     },
     ar: {
-        brand: "خطوط طيران رويال سكاي",
+        brand: "مصر للطيران",
         nav: {
             home: "الرئيسية",
-            about: "من نحن",
-            services: "خدماتنا",
-            contact: "تواصل معنا"
+            book: "احجز",
+            manage: "إدارة الحجز",
+            experience: "تجربة السفر",
+            help: "المساعدة"
         },
         hero: {
-            title: "عيش الرفاهية فوق السحاب",
-            subtitle: "تقدم خطوط رويال سكاي تجربة سفر لا مثيل لها مع راحة وخدمة عالمية المستوى.",
-            cta: "احجز رحلتك"
+            title: "عِش الرفاهية فوق السحاب",
+            subtitle: "سافر مع مصر للطيران واكتشف تجربة سفر لا مثيل لها مع راحة وخدمة عالمية المستوى.",
+            cta: "احجز رحلتك الآن"
+        },
+        booking: {
+            flightSearch: "بحث عن رحلة",
+            from: "من",
+            to: "إلى",
+            depart: "تاريخ المغادرة",
+            return: "تاريخ العودة",
+            passengers: "المسافرون",
+            search: "ابحث عن الرحلات",
+            oneWay: "ذهاب فقط",
+            roundTrip: "ذهاب وعودة"
+        },
+        map: {
+            title: "شبكتنا العالمية",
+            subtitle: "نربطك بأكثر من 150 وجهة حول العالم انطلاقاً من مركزنا في القاهرة."
+        },
+        manage: {
+            title: "إدارة حجزك",
+            subtitle: "عرض، تعديل، أو إتمام إجراءات السفر لرحلاتك القادمة.",
+            bookingRef: "رقم الحجز",
+            lastName: "اسم العائلة",
+            submit: "استعراض الحجز"
+        },
+        help: {
+            title: "كيف يمكننا مساعدتك؟",
+            subtitle: "ابحث عن إجابات للأسئلة الشائعة.",
+            faq1Title: "الأمتعة المسموح بها",
+            faq1Desc: "تعرف على حدود الأمتعة المسجلة والمحمولة لرحلتك.",
+            faq2Title: "إنهاء إجراءات السفر",
+            faq2Desc: "يمكنك إنهاء إجراءات السفر حتى 48 ساعة قبل موعد المغادرة.",
+            faq3Title: "حالة الرحلة",
+            faq3Desc: "احصل على تحديثات فورية حول أوقات مغادرة ووصول رحلتك."
         },
         services: {
             title: "خدماتنا المميزة",
             items: [
-                { title: "أجنحة الدرجة الأولى", desc: "أجنحة خاصة مع أسرة مسطحة بالكامل." },
-                { title: "عشاء فاخر", desc: "وجبات رائعة من إعداد أفضل الطهاة." },
+                { title: "أجنحة الدرجة الأولى", desc: "أجنحة خاصة مع أسرة مسطحة بالكامل للاسترخاء التام." },
+                { title: "عشاء فاخر", desc: "وجبات رائعة من إعداد أفضل الطهاة حول العالم." },
                 { title: "صالة جوية", desc: "استرخ وتواصل اجتماعياً في صالتنا الحصرية." }
             ]
         },
         footer: {
             contact: "تواصل معنا",
-            address: "123 طريق الطيران، مدينة السماء",
-            rights: "© 2026 خطوط طيران رويال سكاي. جميع الحقوق محفوظة."
+            address: "مطار القاهرة الدولي، مصر",
+            rights: "© 2026 مصر للطيران. جميع الحقوق محفوظة."
         }
     }
 };
