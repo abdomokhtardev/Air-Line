@@ -1,33 +1,33 @@
-# Egyptair Landing Page Clone
+# مشروع واجهة طيران احترافية (نسخة مصر للطيران) ✈️🇪🇬
 
-This project is a high-fidelity, ultra-premium clone of an airline landing page, tailored with Egyptair branding. Built with React and Tailwind CSS, it features modern glassmorphism UI, smooth animations, and bilingual support.
+المشروع ده عبارة عن واجهة مستخدم (UI) فخمة جداً معمولة عشان تحاكي مواقع شركات الطيران العالمية، ومتصممة مخصوص بستايل وألوان "مصر للطيران" (الكحلي والدهبي). الموقع مبني بـ React و Tailwind CSS وفيه حركات (Animations) ناعمة وتصميم زجاجي (Glassmorphism) بيدي إحساس بالرفاهية.
 
-## Features
+## المميزات الأساسية 🌟
 
-- **Ultra-Premium UI**: Designed to match the quality of top global airlines. Features a dark theme (`#0a1128`) with signature Egyptair Navy and Gold accents.
-- **Bilingual Support (Arabic & English)**: Fully localized using a custom `LanguageContext`. Supports dynamic RTL (Right-to-Left) and LTR layout switching.
-- **Dynamic Fonts**: Uses Google Fonts `Tajawal` for Arabic and `Outfit` for English to ensure optimal typography.
-- **Flight Booking Engine**: A complex, glassmorphism-styled booking widget for searching flights.
-- **Global Network Map**: An interactive-looking world map with animated SVG flight routes radiating from Cairo.
-- **Smooth Navigation**: The Navbar features a scroll effect and anchor links that smoothly scroll to sections on the page.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+- **تصميم فخم (Ultra-Premium)**: تصميم معمول على الفرازة، شغال بـ Dark Theme مع درجات الكحلي والدهبي المميزة لمصر للطيران.
+- **دعم اللغتين (عربي وإنجليزي)**: الموقع شغال عربي وإنجليزي بالكامل، وبيقلب الشاشة (RTL و LTR) بسلاسة عن طريق `LanguageContext`.
+- **خطوط احترافية**: استخدمنا خطوط جوجل زي `Tajawal` للعربي و `Outfit` للإنجليزي عشان القراءة تكون مريحة وشكلها شيك.
+- **محرك حجز التذاكر (Booking Engine)**: نموذج حجز كامل وفخم (شكل بس طبعاً) متصمم بستايل زجاجي فوق خلفية الطيارة عشان تحس إنك في موقع حقيقي.
+- **خريطة الوجهات العالمية**: خريطة للعالم بتظهر عليها خيوط حمرا منورة ومتحركة بتطلع من القاهرة وبتتوزع على العالم كله.
+- **حركة ناعمة (Smooth Scrolling)**: لما تدوس على أي لينك في الناف بار، الموقع بينزل بيك للقسم المطلوب بنعومة.
+- **شغال على كل الشاشات (Responsive)**: متظبط يشتغل على الموبايل، التابلت، وشاشات الكمبيوتر.
 
-## Tech Stack
+## التقنيات المستخدمة 🛠️
 
 - React (Vite)
 - Tailwind CSS
-- CSS Animations & SVG Manipulation
+- CSS Animations & SVG (لتحريك خطوط الخريطة)
 
-## Getting Started
+## إزاي تشغل المشروع عندك؟ 🚀
 
-1. Clone the repository
-2. Run `npm install` to install dependencies
-3. Run `npm run dev` to start the development server
-4. Open the provided localhost link in your browser
+1. اعمل Clone للمشروع عندك.
+2. افتح الـ Terminal واكتب `npm install` عشان تنزل كل المكاتب المطلوبة.
+3. بعد ما يخلص، اكتب `npm run dev` عشان تشغل سيرفر التطوير (Development Server).
+4. افتح اللينك اللي هيطلعلك (غالباً `http://localhost:5173/`) في المتصفح وعيش!
 
-## Project Structure
+## تفاصيل الأكواد 📁
 
-- `/src/components`: Contains all UI blocks (`Navbar`, `Hero`, `BookingWidget`, `DestinationsMap`, `Manage`, `Services`, `Help`, `Footer`).
-- `/src/context`: Contains the `LanguageContext.jsx` for localization state.
-- `/src/index.css`: Contains custom CSS animations (`float`, `draw-route`, etc.) and global styles.
-- `tailwind.config.js`: Contains the custom color palette and font definitions.
+- `/src/components`: هنا هتلاقي كل أقسام الموقع (`Navbar`, `Hero`, `BookingWidget`, `DestinationsMap`, `Manage`, `Services`, `Help`, `Footer`).
+- `/src/context`: فيه ملف `LanguageContext.jsx` اللي ماسك حالة اللغة وتغييرها.
+- `/src/index.css`: فيه الأكواد الخاصة بالـ CSS Animations زي حركة الخريطة والطيارة.
+- `tailwind.config.js`: هنا ظبطنا الألوان المخصوصة بتاعتنا والخطوط.
